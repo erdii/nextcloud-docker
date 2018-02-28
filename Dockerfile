@@ -1,6 +1,7 @@
 FROM nextcloud:13-apache
 
 RUN apt-get update && apt-get install -y \
+    php-apcu \
     supervisor \
   && rm -rf /var/lib/apt/lists/* \
   && mkdir /var/log/supervisord /var/run/supervisord
