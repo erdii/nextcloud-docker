@@ -5,8 +5,9 @@ BUILD_PATH := .build
 
 
 .PHONY: build
-build: 
+build:
 	sudo docker build . \
+		--force-rm \
 		-t $(REPO):latest \
 		-t $(REPO):$(VERSION) \
 		-t $(REGISTRY)/$(REPO):$(VERSION)
