@@ -1,4 +1,4 @@
-# werise-nextcloud
+# nextcloud
 
 * copy `deploy.sample.json` to `deploy.json` and fill in the correct values
 * to build the container: `make build`

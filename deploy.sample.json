@@ -1,5 +1,5 @@
 {
 	"registry": "hub.docker.com",
-	"repo": "nextcloud",
-	"version": "0.0.1"
+	"repo": "erdii/nextcloud",
+	"version": "13.0.3-apache"
 }
