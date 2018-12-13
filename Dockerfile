@@ -15,4 +15,4 @@ COPY supervisord.conf /etc/supervisor/supervisord.conf
 COPY cron-override.sh /cron-override.sh
 COPY entrypoint-override.sh /entrypoint-override.sh
 
-ENTRYPOINT ["/entrypoint-override.sh"]
+CMD ["/entrypoint-override.sh"]
