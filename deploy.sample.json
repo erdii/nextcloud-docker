@@ -1,4 +1,4 @@
 {
-	"repo": "erdii/nextcloud-k8s-test",
-	"version": "14.0.3-apache"
+	"repo": "erdii/nextcloud",
+	"version": "14.0.12-apache"
 }
