@@ -7,11 +7,11 @@ all: | build push
 
 .PHONY: build
 build:
-	sudo docker build . \
+	docker build . \
 		--force-rm \
 		-t $(REPO):latest \
 		-t $(REPO):$(VERSION)
 
 .PHONY: push
 push:
-	sudo docker push $(REPO):$(VERSION)
+	docker push $(REPO):$(VERSION)
