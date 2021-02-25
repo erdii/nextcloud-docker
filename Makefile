@@ -1,5 +1,5 @@
-VERSION := $(shell jq -r '.version' deploy.json)
-REPO := $(shell jq -r '.repo' deploy.json)
+VERSION = "20.0.7-apache"
+REPO = "erdii/nextcloud"
 BUILD_PATH := .build
 
 .PHONY: all
