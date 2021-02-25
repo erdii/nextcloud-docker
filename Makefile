@@ -1,5 +1,5 @@
-VERSION := $(shell jq -r '.version' deploy.json)
-REPO := $(shell jq -r '.repo' deploy.json)
+VERSION = 20.0.7-apache
+REPO = quay.io/erdii/nextcloud
 BUILD_PATH := .build
 
 .PHONY: all
@@ -9,6 +9,7 @@ all: | build push
 build:
 	docker build . \
 		--force-rm \
+		--build-arg VERSION="$(VERSION)" \
 		-t $(REPO):latest \
 		-t $(REPO):$(VERSION)
 

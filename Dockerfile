@@ -1,4 +1,5 @@
-FROM nextcloud:20.0.3-apache
+ARG VERSION
+FROM nextcloud:$VERSION
 
 RUN apt-get update && apt-get install -y \
     supervisor \
