@@ -1,6 +1,5 @@
-VERSION = 20.0.7-apache
-REPO = quay.io/erdii/nextcloud
-BUILD_PATH := .build
+VERSION = 20.0.8-apache
+REPO = ghcr.io/erdii/nextcloud
 
 .PHONY: all
 all: | build push
