@@ -1,4 +1,4 @@
-VERSION = 24.0.10-apache
+VERSION = 25.0.4-apache
 REPO = ghcr.io/erdii/nextcloud
 
 .PHONY: all
